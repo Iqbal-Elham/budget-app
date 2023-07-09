@@ -15,6 +15,9 @@ gem "pg", "~> 1.1"
 gem 'devise'
 
 gem 'bootstrap', '~> 5.0.0'
+
+gem 'font-awesome-sass'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
