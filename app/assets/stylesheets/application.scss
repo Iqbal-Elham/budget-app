@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+ @import 'font-awesome';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(235, 233, 233);
+}
+
+
+ .bg-primary,
+ .btn-primary {
+    background-color: #2d7ad2 !important;
+ }
