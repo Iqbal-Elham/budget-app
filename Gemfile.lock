@@ -107,6 +107,7 @@ GEM
       sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    htmlbeautifier (1.4.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.2.1)
@@ -252,6 +253,7 @@ DEPENDENCIES
   debug
   devise
   font-awesome-sass
+  htmlbeautifier
   importmap-rails
   jbuilder
   pg (~> 1.1)
