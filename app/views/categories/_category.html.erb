@@ -1,16 +1,16 @@
 <div id="<%= dom_id category %>" class="bg-light p-2 d-flex m-3 align-items-start position-relative">
 
   <div>
-    <p class="p-2"><%= category.icon %></p>
+    <img src="<%= category.icon %>" alt="icon" width="80">
   </div>
 
-  <div>
+  <div class="mx-3">
     <p><%= category.name %></p>
     <p><%= category.created_at.strftime("%d %B %Y") %></p>
   </div>
 
   <div>
-    <p class="price">$246</p>
+    <p class="price">$<%=category.expenses.sum(:amount) %></p>
   </div>
 
 </div>
