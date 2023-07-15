@@ -1,0 +1,17 @@
+<div class="bg-primary d-flex justify-content-between align-items-center px-4 pt-4 pb-3">   
+  <i class= "fa-solid fa-bars fa-xl text-light text-decoration-none"></i>
+  <h2 class="text-light text-center">Categories</h2>
+  <%= link_to "", destroy_user_session_path, class: "fa-solid fa-door-open fa-xl text-light text-decoration-none" %>
+</div>
+
+<div id="categories">
+  <% @categories.each do |category| %>
+  <%= link_to category_expenses_path(category), class: "text-decoration-none text-dark" do %>
+    <%= render category %>
+    <% end %>
+  <% end %>
+  <div class="outer-btn">
+  <%= link_to "New category", new_category_path, class:"add-btn" %>
+  </div>
+</div>
+
