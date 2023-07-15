@@ -1,6 +1,6 @@
 class ExpensesController < ApplicationController
   before_action :set_category
-  before_action :set_expense, only: %i[ show destroy ]
+  before_action :set_expense, only: %i[show destroy]
   before_action :authenticate_user!
 
   def index
@@ -34,8 +34,8 @@ class ExpensesController < ApplicationController
     @expense = @category.expenses.find(params[:id])
   end
 
-    # Only allow a list of trusted parameters through.
-    def expense_params
-      params.require(:expense).permit(:name, :amount, :user_id)
-    end
+  # Only allow a list of trusted parameters through.
+  def expense_params
+    params.require(:expense).permit(:name, :amount, :user_id)
+  end
 end
