@@ -7,11 +7,6 @@ class Category < ApplicationRecord
   validates :name, presence: true
   validates :icon, presence: true
 
-  # def total_amount
-  #   total = 0
-  #   product.each do |product|
-  #     total += product.amount
-  #   end
-  #   total
-  # end
+  validates :name, presence: true, length: { minimum: 3, maximum: 30 }
+  validates :icon, presence: true
 end
