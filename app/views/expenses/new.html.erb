@@ -1,3 +1,5 @@
+<%= render 'shared/header', title: "New Transaction" %>
+
 <%= form_with(model: @expense, url: category_expenses_path) do |form| %>
   <% if @expense.errors.any? %>
     <div style="color: red">
@@ -11,17 +13,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+  <div class="form-fields m-1">
+    <div>
+      <%= form.text_field :name, class: "form-field", placeholder: "Name" %>
+    </div>
 
-  <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
-  </div>
+    <div>
+      <%= form.text_field :amount, class: "form-field", placeholder: "Amount" %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div>
+      <%= form.submit "Create Transaction", class: "btn btn-primary w-100 btn-lg mt-2" %>
+    </div>
   </div>
 <% end %>

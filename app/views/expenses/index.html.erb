@@ -2,13 +2,15 @@
 <%= render 'shared/header', title: "Transactions" %>
 
 <div id="expenses">
-<p class="total-amount">
+<p class="bg-info w-100 p-2 text-center">
     <strong>Total amount: </strong>
     $<%= @expenses.sum(:amount) %>
   </p>
   <% @expenses.each do |expense| %>
     <%= render expense %>
   <% end %>
+ <div class="outer-btn">
+    <%= link_to "New Transaction", new_category_expense_path, class:"add-btn" %>
+  </div>
 </div>
 
-<%= link_to "New expense", new_category_expense_path %>
