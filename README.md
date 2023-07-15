@@ -33,9 +33,17 @@
 
 # 📖 Budget App <a name="about-project"></a>
 
-> SmartS Money is a mobile web application where you can manage your Money: you have a list of expenses associated with a category, so that you can see how much money you spent and on which category.
+> Smart Money is a mobile web application where you can manage your Money: you have a list of expenses associated with a category, so that you can see how much money you spent and on which category.
 
 <div align="center"><img src="./lib/assets/diagram.png" alt="logo" width="340"  height="auto" /></div>
+
+
+## 🛠 Live Demo <a name="built-with"></a>
+
+[Smart Money](https://smart-budget-h6ag.onrender.com/)
+## 🛠 Video Presentation  <a name="built-with"></a>
+
+[Loom video link](https://www.loom.com/share/751ba822cbe84f60bc7733a5366cc9ea?sid=c30ac96d-8059-4746-bcd4-c1d2fed41286)
 
 ## 🛠 Built With <a name="built-with"></a>
 
